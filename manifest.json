@@ -1,0 +1,17 @@
+{
+  "name": "Appcubator",
+  "description": "Easy app builder",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "permissions": [
+    "storage",
+    "input",
+    {"fileSystem": ["write"]} 
+  ],
+  "icons": { "16": "assets/logo-16.png", "128": "assets/logo-128.png" }
+}
