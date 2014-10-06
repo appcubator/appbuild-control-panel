@@ -10,8 +10,7 @@
   },
   "permissions": [
     "storage",
-    "input",
-    {"fileSystem": ["write"]} 
+    {"fileSystem": ["write", "directory"]} 
   ],
   "icons": { "16": "assets/logo-16.png", "128": "assets/logo-128.png" }
 }

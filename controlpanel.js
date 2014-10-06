@@ -43,7 +43,7 @@ function setEntry(anEntry, isWritable, name) {
 
 var directoryEntry = null;
 function openFile() {
-	chrome.fileSystem.chooseEntry("openDirectory", function (entry) {
+	chrome.fileSystem.chooseEntry({type:"openDirectory"}, function (entry) {
 	  	console.log("entry");
 	  	directoryEntry = entry;
 	  	console.log()
@@ -78,12 +78,6 @@ $createProjectBtn.click(function() {
 		});
  
  	});
-
-	// window.webkitRequestFileSystem(window.TEMPORARY, 1024*1024, function(fs) {
-	// 	console.log(projectName+'-project3');
-	// 	console.log("fs");
-	// 	console.log(fs);
-		
 	// 	chrome.fileSystem.getWritableEntry('~/'+projectName+'-project', function(a) {
 	// 		console.log("hey");
 	// 		console.log(a);
